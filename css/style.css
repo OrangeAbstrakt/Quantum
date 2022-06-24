@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+.home-container{
+    width: 100%;
+    height: 650px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 60% 20%;
+}
+
+.heading{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    /* border: 2px solid red; */
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 7rem;
+    color: white;
+}
+
+.sub-heading{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+
+}
+
+.skills-hold{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    background: #202428;
+}
+
+.skills-container{
+    width: 100%;
+    height: 400px;
+    display: grid; 
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 10% 80% 10%;
+    grid-gap: 10px;
+    
+}
+
+.skill{
+    grid-row: 2/3;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    color: transparent;
+    
+}
+
+.skill:hover{
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.one{
+    grid-column: 1/2;
+    background-image: url('../assets/main-homepage.png');
+    background-size: cover;
+}
+.two{
+    grid-column: 2/3;
+    background-image: url('../assets/3d-modeling1.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.three{
+    grid-column: 3/4;
+    background-image: url('../assets/logo-design.jpg');
+    background-size: cover;
+    background-position: 45%;
+}
+.four{
+    grid-column: 4/5;
+    background-image: url('../assets/website-design.png');
+    background-size: contain;
+    background-position: 20%;
+}
+
+
+
