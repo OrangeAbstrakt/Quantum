@@ -42,8 +42,33 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 1.2rem;
     color: white;
-
 }
+
+.launch{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 20%;
+    justify-self: center;
+    align-self: center;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
+    padding: 2px;
+    color: white;
+    background: orange;
+    border-radius: 50px;
+    box-shadow: inset 3px 3px 10px black;
+    /* transition-timing-function: 3s; */
+}
+
+.launch:hover{
+    box-shadow: 3px 3px 10px black;
+    text-shadow: 2px 2px 3px black;
+}
+
 
 .skills-hold {
     width: 100%;
@@ -128,11 +153,7 @@ body {
 
 
 @media screen and (min-width: 320px) and (max-width:480px) {
-    
-    body{
-           
-    }
-
+  
     .home-container {
         width: 100vw;
         height: 100vh;
@@ -149,6 +170,15 @@ body {
         align-self: center;
         margin-left: 22px;
         margin-top: 140px;
+    }
+    
+    .launch{
+        width: 60%;
+        margin-top: 250px;
+        margin-left: 20px;
+        justify-self: flex-start;
+        border: 0px;
+        box-shadow: 3px 3px 10px black;
     }
 
     ::-webkit-scrollbar {
