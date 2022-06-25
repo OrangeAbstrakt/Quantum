@@ -159,18 +159,11 @@ body {
 
 
 @media screen and (min-width: 320px) and (max-width:480px) {
-<<<<<<< HEAD
-  
-=======
-
-    body {}
-
->>>>>>> 8300d7af2255d6141e22ef50d5634f16b9f1e2ea
     .home-container {
         width: 100vw;
         height: 100vh;
     }
-
+    
     .heading {
         font-size: 4rem;
         justify-content: flex-start;
