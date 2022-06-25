@@ -1,33 +1,33 @@
-a{
+a {
     text-decoration: none;
 }
 
-.ab-nav-bar{
+.ab-nav-bar {
     grid-row: 1/2;
     grid-column: 1/5;
     width: 100%;
-    height: 100%;
+    height: 78px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
 }
 
-.ab-links{
+.ab-links {
     width: 100%;
-    height: 60%;
+    height: 100%;
     display: grid;
     grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
     grid-template-rows: 2% 96% 2%;
     align-items: center;
     text-align: center;
-    background: rgba(41, 41, 41, 0.432);
+    background: var(--background-secondary);
     box-shadow: 0px 0px 10px black;
 }
 
 
 
 
-.ab-linked{
+.ab-linked {
     grid-row: 2/3;
     max-width: 90%;
     max-height: 80%;
@@ -36,26 +36,27 @@ a{
     font-weight: 800;
     border-radius: 20px;
     text-shadow: 2px 2px 2px black;
-    color: white; 
+    color: white;
+    cursor: pointer;
 }
 
-.ab-linked:hover{
+.ab-linked:hover {
     transform: scale(1.3, 1.3);
 }
 
-.ab-l2{
+.ab-l2 {
     grid-column: 1/2;
     display: flex;
     /* border: 2px solid red; */
-    justify-content: flex-start;    
+    justify-content: flex-start;
     align-items: center;
 }
 
-.ab-l2:hover{
-    transform: scale(1,1);
+.ab-l2:hover {
+    transform: scale(1, 1);
 }
 
-.main-logo{
+.main-logo {
     width: 120%;
     height: 120%;
 }
@@ -76,22 +77,23 @@ a{
     align-items: center;
     
 } */
-.ab-l6{
+.ab-l6 {
     grid-column: 6/7;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
-.ab-l7{
+
+.ab-l7 {
     grid-column: 7/8;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-.ab-l8{
+.ab-l8 {
     grid-column: 8/9;
     display: flex;
     justify-content: center;
@@ -99,30 +101,32 @@ a{
 }
 
 
-@media screen and (min-width: 320px) and (max-width: 480px){
+@media screen and (min-width: 320px) and (max-width: 480px) {
 
-    .ab-linked{
+    .ab-linked {
         max-width: 100%;
     }
 
-    .ab-l2{
+    .ab-l2 {
         width: 100%;
         height: 100%;
     }
 
-    .main-logo{
-        transform: scale(2,2);
+    .main-logo {
+        transform: scale(2, 2);
         margin-left: 20px;
     }
 
-    .ab-l6{
+    .ab-l6 {
         grid-column: 5/6;
     }
-    .ab-l7{
+
+    .ab-l7 {
         grid-column: 6/7;
         padding-left: 25px;
     }
-    .ab-l8{
+
+    .ab-l8 {
         grid-column: 7/8;
         padding-left: 60px;
     }

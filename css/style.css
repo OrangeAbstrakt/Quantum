@@ -1,3 +1,9 @@
+/* global variables */
+:root {
+    --background-primary: #202428;
+    --background-secondary: rgba(41, 41, 41, 0.432);
+}
+
 * {
     box-sizing: border-box;
     padding: 0px;
@@ -75,7 +81,7 @@ body {
     height: 650px;
     display: flex;
     align-items: center;
-    background: #202428;
+    background: var(--background-primary);
 }
 
 .skills-container {
@@ -153,7 +159,13 @@ body {
 
 
 @media screen and (min-width: 320px) and (max-width:480px) {
+<<<<<<< HEAD
   
+=======
+
+    body {}
+
+>>>>>>> 8300d7af2255d6141e22ef50d5634f16b9f1e2ea
     .home-container {
         width: 100vw;
         height: 100vh;
@@ -190,7 +202,7 @@ body {
         height: 650px;
         display: flex;
         align-items: center;
-        background: #202428;
+        background: var(--background-primary);
 
     }
 
@@ -257,13 +269,13 @@ body {
 
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px){
+@media screen and (min-width: 481px) and (max-width: 768px) {
     .skills-hold {
         width: 100%;
         height: 850px;
         display: flex;
         align-items: center;
-        background: #202428;
+        background: var(--background-primary);
 
     }
 
@@ -276,8 +288,8 @@ body {
         grid-gap: 10px;
 
     }
-    
-    section{
+
+    section {
         overflow: hidden;
         white-space: wrap;
         word-break: break-word;
@@ -331,5 +343,5 @@ body {
     ::-webkit-scrollbar {
         width: 0px;
         background: transparent;
-    }   
+    }
 }
