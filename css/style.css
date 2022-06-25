@@ -64,6 +64,7 @@ body {
     font-size: 1.1rem;
     padding: 2px;
     color: white;
+    border: 0px;
     background: orange;
     border-radius: 50px;
     box-shadow: inset 3px 3px 10px black;
