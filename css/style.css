@@ -246,6 +246,12 @@ body {
         grid-gap: 10px;
 
     }
+    
+    section{
+        overflow: hidden;
+        white-space: wrap;
+        word-break: break-word;
+    }
 
     .skill {
         width: 100%;
