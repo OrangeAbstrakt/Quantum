@@ -1,0 +1,154 @@
+body {
+    background-color: var(--background-primary);
+    color: white
+}
+
+.about-container {
+    margin-top: 10px;
+}
+
+.heading {
+    font-size: 4rem !important;
+}
+
+.grid.about {
+    display: grid;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.grid-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.grid-item.v2 {
+    flex-direction: row-reverse;
+}
+
+.item.image {
+    height: 300px;
+    border-radius: 500px;
+    transition: 100ms;
+}
+
+.item.image:hover {
+    transform: scale(1.05);
+}
+
+.v1 .item.image-cont {
+    justify-content: flex-end;
+}
+
+.v2 .item.image-cont {
+    justify-content: flex-start;
+}
+
+.item.image-cont {
+    width: 45%;
+    display: flex;
+}
+
+.item.textbox {
+    padding: 10px;
+    max-width: 512px;
+    width: 45%;
+    /* text-align: left; */
+    /* text-align: right */
+}
+
+.item.sub-heading {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.item.text-cont {
+    /* padding: 10px 10px 10px 100px; */
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.item.text {
+    text-align: left;
+}
+
+.v2 .text-cont {
+    /* border-radius: 0px 0px 0px 500px; */
+}
+
+.circle-item {
+    border-radius: 500px;
+    height: 80px;
+    width: 80px;
+    background-color: black;
+    position: relative;
+    align-self: center;
+    transition: ease-out;
+    z-index: -1;
+}
+
+.circle-cont {
+    display: flex;
+    width: 300px;
+    position: absolute;
+    align-self: center;
+    justify-content: space-between;
+    z-index: -1;
+}
+
+.v1 .uno,
+.v2 .tres {
+    transition: 600ms 200ms;
+}
+
+:is(.v1, .v2) .dos {
+    transition: 800ms;
+}
+
+.v1 .tres,
+.v2 .uno {
+    transition: 800ms;
+}
+
+.image:not(:hover)~.circle-cont .circle-item {
+    transition-delay: 0ms !important;
+}
+
+.g1 .image:hover~.circle-cont .uno,
+.g3 .image:hover~.circle-cont .uno {
+    transform: translate(-100px);
+}
+
+.g1 .image:hover~.circle-cont .dos,
+.g3 .image:hover~.circle-cont .dos {
+    transform: translate(-130px, -160px);
+}
+
+.g1 .image:hover~.circle-cont .tres,
+.g3 .image:hover~.circle-cont .tres {
+    transform: translate(-240px, 160px);
+}
+
+.g2 .image:hover~.circle-cont .tres {
+    transform: translate(100px);
+
+}
+
+.g2 .image:hover~.circle-cont .dos {
+    transform: translate(130px, -160px);
+
+}
+
+.g2 .image:hover~.circle-cont .uno {
+    transform: translate(240px, 160px);
+
+}
+
+/* @keyframes circles {
+    100% {
+        transform: translate(100px);
+    }
+} */
