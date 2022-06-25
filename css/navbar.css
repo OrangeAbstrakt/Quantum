@@ -4,7 +4,7 @@ a{
 
 .ab-nav-bar{
     grid-row: 1/2;
-    grid-column: 1/4;
+    grid-column: 1/5;
     width: 100%;
     height: 100%;
     display: flex;
@@ -120,11 +120,11 @@ a{
     }
     .ab-l7{
         grid-column: 6/7;
-        padding-left: 20px;
+        padding-left: 25px;
     }
     .ab-l8{
         grid-column: 7/8;
-        padding-left: 40px;
+        padding-left: 60px;
     }
 
 }
