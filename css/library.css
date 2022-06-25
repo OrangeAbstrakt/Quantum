@@ -12,22 +12,10 @@
     margin-left: 20px;
 }
 
-.ab-back{
-    transform: scale(1.5, 1.5);
-    margin-left: 20px;
-}
-
 .ab-g{
     display: grid;
     grid-template-columns: 80% 20%;
     grid-template-rows: 33.3% 33.3% 33.3%;
-    box-shadow: 3px 3px 5px black;
-}
-
-.ab-g:hover{
-    transform: scale(1.05, 1.05);
-    background: #202428;
-    box-shadow: 3px 3px 10px black;
 }
 
 a{
