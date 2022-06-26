@@ -11,6 +11,19 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbar.css">
     <title>Document</title>
+    <script>
+        function contact(params) {
+            if(params !== "mobile"){
+                document.getElementById("contact").style.display="flex"
+                setTimeout(() => {
+                    document.getElementById("contact").style.display="none"
+                }, 5000);
+            }else{
+                return "Email: abstract-design@gmail.com\nContact: 1122334455\nOffice: 18 King Colony, Queen Road - New Delhi"
+
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -19,7 +32,8 @@
         <div class="ab-nav-bar">
             <div class="ab-links">
                 <div class="ab-linked ab-l2">
-                    <img src="./assets/logo.png" alt="Abstract" class="main-logo" onclick="window.location.href = 'index.html'">
+                    <img src="./assets/logo.png" alt="Abstract" class="main-logo"
+                        onclick="window.location.href = 'index.html'">
                 </div>
                 <div class="ab-linked ab-l6"><strong>Home</strong></div>
                 <div class="ab-linked ab-l7" onclick="window.location.href = 'about.html'">About</div>
@@ -29,10 +43,12 @@
         <div class="heading">Abstract</div>
         <div class="sub-heading">We Design Your Dream Assets</div>
         <button class="launch" onclick="window.location.href = 'library.html'">Library</button>
-        
+        <button class="launch green do" onclick="alert(contact('mobile'))">Contact Us</button> 
+        <button class="launch green ek" onclick="contact()">Contact Us</button> 
+        <div id="contact">Email: abstract-design@gmail.com<br>Contact: 9822334455<br>Office: 18 King Colony, Queen Road - New Delhi</div>
     </div>
     <section id="skills">
-        <div class="skills-hold">
+        <div class="skills-hold" id="skill-id">
             <div class="skills-container">
                 <div class="skill one">Brand Design</div>
                 <div class="skill two">3D Modeling</div>
@@ -72,6 +88,7 @@
             color: 0x750e75
         })
     </script>
+
 
 </body>
 

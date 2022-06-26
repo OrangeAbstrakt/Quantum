@@ -261,9 +261,15 @@ body {
         background: transparent;
     }
 
-
 }
-
+@media (max-width:900px){
+    .launch.green.ek, #contact{
+        display: none !important;
+    }
+    .launch.green.do {
+        display:flex !important;
+    }
+}
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .skills-hold {
         width: 100%;
@@ -339,6 +345,9 @@ body {
         width: 0px;
         background: transparent;
     }
+    #contact{
+        display: none;
+    }
 }
 
 #achievements{
@@ -388,4 +397,26 @@ body {
     100%{
         transform: translate(-200vw);
     }
+}
+.launch.green{
+    top:45px;
+    background-color: green;
+}
+#contact{
+    background-color: var(--background-secondary);
+    position: absolute;
+    align-self:center;
+    justify-self: flex-end;
+    right:10%;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:white;
+    filter: drop-shadow(0px 0px 10px black);
+    display: none;
+}
+.launch.green.do{
+    display:none;
 }
